@@ -8,7 +8,7 @@
 - Main content is focused to be shown on the mobile devices only
 
 ## Screenshot
-![here](./screenshots/screenshot.png)
+![here](/screenshots/screenshot.png)
 
 ## Online Link
 [github Pages Link](https://tiborkopca.github.io/Vadi_Inocente2024/)
