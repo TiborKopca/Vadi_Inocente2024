@@ -19,11 +19,11 @@ function getNewsletterOutOfView() {
 
 setTimeout(() => {
   subbtn.style.display = "block";
-}, 2000);
+}, 10000);
 
 setTimeout(() => {
   subbtn.classList.add("btn-active");
-}, 2000);
+}, 10000);
 
 subbtn.addEventListener("click", (e) => {
     e.preventDefault;
