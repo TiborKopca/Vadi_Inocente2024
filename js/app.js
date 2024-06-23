@@ -4,16 +4,17 @@ const subbtn = document.getElementById("subscribe");
 const form = document.getElementById("form");
 const xbtn = document.getElementById("x-button");
 const mainContainer = document.getElementById("container");
+const videoContainer = document.getElementById("videoContainer");
 
 function getNewsletterIntoView() {
 //   form.scrollIntoView({ behavior: "smooth", block: "end" });
   form.classList.add("spread");
-  mainContainer.classList.add("opaque");
+  videoContainer.classList.add("opaque");
 }
 function getNewsletterOutOfView() {
     
   form.classList.remove("spread");
-  mainContainer.classList.remove("opaque");
+  videoContainer.classList.remove("opaque");
 }
 
 setTimeout(() => {
@@ -26,8 +27,11 @@ setTimeout(() => {
 
 subbtn.addEventListener("click", (e) => {
     e.preventDefault;
-  getNewsletterIntoView();
+    if(subbtn.classList.contains("btn-active")) {
+      getNewsletterIntoView();
+    }
 });
+
 xbtn.addEventListener("click", (e) => {
     e.preventDefault;
   getNewsletterOutOfView();
