@@ -54,15 +54,16 @@ xbtn.addEventListener("click", (e) => {
 
 //SCREEN ORIENTATION LOCK
 const DEFAULT_SCREEN_WIDTH = 500;
-window.screen.orientation.addEventListener("orientationchange", () => {
-  document.documentElement.requestFullscreen().then( () => {
-    console.log('fullscreen requested');
-  })
+window.addEventListener("orientationchange", () => {
+  // console.log('orientation')
+  document.documentElement.requestFullscreen().then(
+    console.log('fullscreen requested'));
 
   console.log(screen.orientation);
   console.log(`screen width: ${screen.width}`);
 
   if(screen.width < DEFAULT_SCREEN_WIDTH) {
+    console.log('success')
     screen.orientation.lock('portrait');
     // screen.orientation.type = "portrait-primary";
     // screen.orientation.lock("portrait-primary");
@@ -106,6 +107,9 @@ window.screen.orientation.addEventListener("orientationchange", () => {
 //       lockOrientation();
 //   }
 // });
+
+
+
 
 // document.addEventListener("DOMContentLoaded", function() {
 //   // Function to lock the screen orientation to landscape
