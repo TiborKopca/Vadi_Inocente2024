@@ -54,11 +54,14 @@ xbtn.addEventListener("click", (e) => {
 
 //SCREEN ORIENTATION LOCK
 const DEFAULT_SCREEN_WIDTH = 500;
-screen.orientation.addEventListener("change", () => {
-  console.log(`The orientation of the screen is: ${screen.orientation}`);
+window.screen.orientation.addEventListener("change", () => {
+  console.log(screen.orientation);
   console.log(`screen width: ${screen.width}`);
+
   if(screen.width < DEFAULT_SCREEN_WIDTH) {
     screen.orientation.lock("portrait");
+    screen.orientation.type = "portrait-primary";
+    screen.orientation.lock("portrait-primary");
   } else {
     screen.orientation.unlock();
   }
