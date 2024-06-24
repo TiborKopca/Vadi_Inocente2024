@@ -55,15 +55,55 @@ xbtn.addEventListener("click", (e) => {
 //SCREEN ORIENTATION LOCK
 const DEFAULT_SCREEN_WIDTH = 500;
 window.screen.orientation.addEventListener("change", () => {
+  document.documentElement.requestFullscreen().then( () => {
+    console.log('fullscreen requested');
+  })
+
   console.log(screen.orientation);
   console.log(`screen width: ${screen.width}`);
 
   if(screen.width < DEFAULT_SCREEN_WIDTH) {
     screen.orientation.lock("portrait");
-    screen.orientation.type = "portrait-primary";
-    screen.orientation.lock("portrait-primary");
+    // screen.orientation.type = "portrait-primary";
+    // screen.orientation.lock("portrait-primary");
   } else {
     screen.orientation.unlock();
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to lock the screen orientation to landscape
+  function lockOrientation() {
+      if (screen.orientation) {
+          screen.orientation.lock('landscape')
+              .then(function() {
+                  console.log('Screen orientation locked to landscape');
+              })
+              .catch(function(error) {
+                  console.error('Error locking screen orientation:', error);
+              });
+      } else if (screen.lockOrientation) { // For older browsers
+          screen.lockOrientation('landscape');
+      } else if (screen.mozLockOrientation) { // For Firefox
+          screen.mozLockOrientation('landscape');
+      } else if (screen.msLockOrientation) { // For IE/Edge
+          screen.msLockOrientation('landscape');
+      } else {
+          console.error('Screen Orientation API not supported');
+      }
+  }
+
+  // Event listener for orientation changes
+  window.addEventListener('orientationchange', function() {
+      if (window.screen.orientation === 90 || window.screen.orientation === -90) {
+          // If the device is in landscape mode
+          lockOrientation();
+      }
+  });
+
+  // Initial check in case the device starts in landscape mode
+  if (window.screen.orientation === 90 || window.screen.orientation === -90) {
+      lockOrientation();
   }
 });
 

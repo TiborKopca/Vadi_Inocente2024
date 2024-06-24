@@ -143,3 +143,17 @@ video {
   padding: 2rem;
   height: 75%;
 } */
+/* @media only screen and (orientation:landscape) {
+  .container{
+    display:none;
+  }
+  .container-landscape{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    padding: 2rem;
+    height: 75%;
+    text-align: center;
+    display:block;
+  }
+} */
