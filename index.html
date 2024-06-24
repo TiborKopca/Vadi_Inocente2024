@@ -117,9 +117,10 @@
         <!-- <video src="./video/vadi_inocente.webm" muted autoplay controls id="video">
         </video> -->
 
-        <video preload="auto" loop muted autoplay >
+        <video preload="auto" onloadstart="this.volume=0.2" controls 
+        loop="loop" autoplay="autoplay" playsinline="playsinline" >
           <!-- <source src="./video/vadi_inocente.mp4" type="video/mp4"></source> -->
-          <source src="./video/vadi_inocente.webm" type="video/webm"></source>
+          <source src="./video/vadi_inocente.webm"  type="video/webm"></source>
       </video> 
 
         <button id="subscribe" class="main__button">CONOCE LA VERDAD</button>
