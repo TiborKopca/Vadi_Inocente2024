@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- TITLE -->
@@ -9,33 +10,29 @@
     <meta name="language" content="es" />
     <meta name="robots" content="index, follow" />
     <meta name="HandheldFriendly" content="true" />
-    <meta name="title" content="Vadim Secuestrado" />
-    <meta name="description" content="El cantante Vadim Secuestrado" />
-    <meta name="keywords" content="El conocido cantante Vadim Secuestrado" />
+    <meta name="title" content="Vadi es inocente" />
+    <meta name="description" content="El cantante Vadi es inocente" />
+    <meta name="keywords" content="El conocido cantante Vadim es inocente" />
 
     <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
      <!-- SOCIAL NETWORKS META -->
-     <meta property="og:title" content="Vadi Secuestrado" />
-     <meta property="og:description" content="Vadi es inocente" />
-     <meta property="og:image" content="./img/favicon/favicon-32x32.png" />
-     <!-- <meta
-       property="og:image"
-       content="https://tiborkopca.github.io/Cats_website/img/infographic2.avif"
-     /> -->
-
-     <meta property="og:url" content="URL de tu página" />
-     <meta property="og:type" content="website" />
      <meta property="og:title" content="Vadi es inocente" />
-     <meta property="og:description" content="" />
-     <meta property="og:site_name" content="" />
-     <meta property="og:image" content="http://" />
+     <meta property="og:description" content="El conocido cantante Vadi es inocente" />
+     <meta property="og:image" content="./img/social/social_img1.png" />
 
-    <meta name="twitter:card" content="summary_large_image" />
+     <meta property="og:url" content="https://vadiesinocente.com/" />
+     <meta property="og:type" content="website" />
+     
+    
+     <meta property="og:site_name" content="Vadi es inocente" />
+
+
+    <meta name="twitter:card" content="El conocido cantante Vadim es inocente" />
     <meta name="twitter:title" content="Vadi es inocente" />
-    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta name="twitter:description" content="El conocido cantante Vadi es inocente" />
     <meta
       name="twitter:image"
-      content="URL de la imagen que quieres mostrar en Twitter"
+      content="https://vadiesinocente.com/img/social/social_img2.png"
     />
     
 
@@ -56,11 +53,10 @@
     <link rel="apple-touch-icon" href="./img/favicon/icon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
     
-    <!--  -->
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <!-- <meta http-equiv="ScreenOrientation" content="autoRotate:disabled"> -->
 
     <!-- <script src="preloader.js"></script> -->
-    <script src="./js/app.js" defer></script>
+    
 
     <!-- START - We recommend to place the below code in head tag of your website html  -->
 <style>
@@ -115,31 +111,24 @@
   <body>
     <div id="container" class="container">
   
-      <div class="videoContainer" id="videoContainer">
+      <!-- <div class="videoContainer" id="videoContainer"> -->
         <!-- <video src="./video/vadi_inocente.webm" muted autoplay controls id="video">
         </video> -->
 
-        <video preload="auto" onloadstart="this.volume=0.2" controls 
-        loop="loop" autoplay="autoplay" playsinline="playsinline" >
-          <!-- <source src="./video/vadi_inocente.mp4" type="video/mp4"></source> -->
-          <source src="./video/vadi_inocente.webm"  type="video/webm"></source>
+        <video muted autoplay loop playsinline
+          preload="auto" controls id="videoContainer">
+        <source src="./video/vadi_inocente.webm"  type="video/webm"></source>
+        <source src="./video/vadi_inocente_reduced.mp4" type="video/mp4"></source>
+        Tu navegador no soporta el formato de video
       </video> 
 
         <button id="subscribe" class="main__button">CONOCE LA VERDAD</button>
-      </div>
-      
-      <!-- <section class="form__container" id="form">
-        <form action="" class="test__form">
-          <input type="text">
-          <input type="">
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores quaerat commodi tempore, laborum vel sunt tenetur. Quasi totam neque maxime. Provident magnam quidem tempora reiciendis aut impedit sint officiis.</div>
-          <button>Enviar</button>
-        </form>
-      </section> -->
+      <!-- </div> -->
+
           <!-- Begin Brevo Form -->
     
     <!-- START - We recommend to place the below code where you want the form in your website html  -->
-    <div class="sib-form" id="form">
+    <div class="sib-form" id="form" >
          
       <div id="sib-form-container" class="sib-form-container">
         <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
@@ -166,22 +155,39 @@
         </div>
         <div></div>
         <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(181,15,22,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#f6f6f6; border-style:solid; direction:ltr">
-          <form class='form__element'id="sib-form" method="POST" action="https://e2ce1fdd.sibforms.com/serve/MUIFAI-oVhxGrxWehzcPZdGHN7E3cQnN1T_zKuAtUXeEHCavaFi94D0eisG5_oRvAQRKb5p5_U2drtyWpVk9Zn867xS7oj9jPQ1foXa6jWA8L1MUjKjKmg7BNn3Gaxd8ytunFAtcSm7jr--HMBf57Ab8ojZGZnAiuZN-HQuwW5TS18fHOQwNsQoUGSfxR0y48CKBpM1CwXu910Qq" data-type="subscription">
-            <!-- CLOSE X BUTTON -->
+          <form class='form__element' id="sib-form" method="POST" action="https://e2ce1fdd.sibforms.com/serve/MUIFAI-oVhxGrxWehzcPZdGHN7E3cQnN1T_zKuAtUXeEHCavaFi94D0eisG5_oRvAQRKb5p5_U2drtyWpVk9Zn867xS7oj9jPQ1foXa6jWA8L1MUjKjKmg7BNn3Gaxd8ytunFAtcSm7jr--HMBf57Ab8ojZGZnAiuZN-HQuwW5TS18fHOQwNsQoUGSfxR0y48CKBpM1CwXu910Qq" data-type="subscription">
+            
+            <!-- <div class="contenedor__de-los-dos" style="display: flex; justify-content: space-between; flex-direction: row;">
+            
+            </div>
             <img src="./svg/x-fill.svg" alt="close button" id="x-button" class="sib-form-message-panel__close-button">
-            <div style="padding: 8px 0;">
-              <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; width: 70%;font-family:Helvetica, sans-serif; color:#f6f6f6; background-color:transparent; text-align:left">
+            
+            <div class='padxs' >
+              <div class="sib-form-block form__header" style="font-size:32px; text-align:left; font-weight:700; width: 70%;font-family:Helvetica, sans-serif; color:#f6f6f6; background-color:transparent; text-align:left">
                 <p>Conoce la verdad</p>
               </div>
+            </div> -->
+
+            <div class='padxs' >
+              <div class="contenedor__de-los-dos" style="display: flex; justify-content: space-between; flex-direction: row;">
+                <div class="sib-form-block formheader" style="font-size:32px; text-align:left; font-weight:700; width: 70%;font-family:Helvetica, sans-serif; color:#f6f6f6; background-color:transparent; text-align:left">
+                  <p>Conoce la verdad</p>
+                </div>
+                <div>
+                  <img src="./svg/x-fill.svg" alt="close button" id="x-button" class="sib-form-message-panel__close-button">
+                </div>
+              </div>
             </div>
-            <div style="padding: 8px 0;">
+
+            <div class='padxs' >
               <div class="sib-form-block" style="font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#f6f6f6; background-color:transparent; text-align:left">
                 <div class="sib-text-form-block">
                   <p>Suscríbase a nuestra newsletter para recibir nuestras novedades.</p>
                 </div>
               </div>
             </div>
-            <div style="padding: 8px 0;">
+
+            <div class='padxs' >
               <div class="sib-input sib-form-block">
                 <div class="form__entry entry_block">
                   <div class="form__label-row ">
@@ -200,7 +206,7 @@
                 </div>
               </div>
             </div>
-            <div style="padding: 8px 0;">
+            <div class='padxs' >
               <div class="sib-optin sib-form-block" data-required="true">
                 <div class="form__entry entry_mcq">
                   <div class="form__label-row ">
@@ -217,7 +223,7 @@
                 </div>
               </div>
             </div>
-            <div style="padding: 8px 0;">
+            <div class='padxs'>
               <div class="sib-form__declaration" style="direction:ltr">
                 <div class="declaration-block-icon">
                   <svg class="icon__SVG" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -236,7 +242,7 @@
                 </div>
               </div>
             </div>
-            <div style="padding: 8px 0;">
+            <div class='padxs'>
               <div class="sib-form-block" style="text-align: right">
                 <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:23px; text-align:right; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#0a0a0a; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
                   <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
@@ -253,9 +259,13 @@
         </div>
       </div>
         </div>
-    <!-- END - We recommend to place the above code where you want the form in your website html  -->
+        <!-- END - We recommend to place the above code where you want the form in your website html  -->
+      </div>
+      <div class="container-landscape">
+        <img lazyload class='rotate-img' src="./img/icons/rotationPhone.webp" alt="" >
+        
+      Para visualizar correctamenter el contenido ponlo en modo vertical.
     </div>
-    <div class="container-landscape">Para visualizar correctamenter el contenido ponlo en modo vertical.</div>
 
 
 
@@ -284,8 +294,8 @@
 
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
-
 <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
 <!-- End Brevo Form -->
+<script src="./js/app.js" defer></script>
   </body>
 </html>

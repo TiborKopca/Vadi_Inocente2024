@@ -1,5 +1,5 @@
 {
-  "name": "https://vadiesinocente.com/",
+  "name": "Vadi es inocente",
   "short_name": "Vadi es inocente",
   "icons": [
     {
@@ -11,7 +11,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/http://127.0.0.1:5500/", 
+  "start_url": "https://vadiesinocente.com/", 
   "display": "standalone"
 }
 

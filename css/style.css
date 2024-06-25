@@ -17,6 +17,7 @@
 /* Colores */
 :root {
   --color-primary: #ae0021;
+  --color-btn: #ff2c2c;
 }
 /* ******************************** */
 
@@ -25,31 +26,40 @@ html {
 }
 
 body {
-  min-height: 100svh;
+  height: 100svh;
   background-color: black;
+  overflow: hidden;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+.container {
+  /* height:fit-content; */
+  height: 100svh;
+  width: 100%;
+  overflow: hidden;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
-}
-.container {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  opacity: 1;
-  transition: all 1s ease-in-out;
 }
 
 video {
-  /* position: absolute; */
+  position: absolute;
   /* position: relative; */
   /* top: 0;
       left: 0; */
   width: 100vw;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   /* z-index:1; */
 }
 .sib-form {
@@ -66,64 +76,60 @@ video {
   height: 100%;
   margin-bottom: 0%;
   overflow: hidden;
-  /* display: none; */
   padding: 0 12px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.spread{
-  transform: translateY(0%);
+.spread {
+  /* display: block; */
+  transform: translateY(1.5%);
 }
-.opaque{
+.opaque {
   opacity: 0.2;
-  
 }
-.form__element{
+.form__element {
   position: relative;
 }
 .sib-form-message-panel__close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
   width: 65px;
   height: 65px;
   cursor: pointer;
 }
-.videoContainer {
+/* .videoContainer {
   position: relative;
   width: 100dvw;
-  /* height: 100dvh; */
   overflow: hidden;
-}
+} */
 .main__button {
   position: absolute;
-  /* bottom: calc(100svh - 91%); */
   bottom: 5%;
-  /* right: -100%; */
   right: 0;
-  /* margin-bottom: -100%; */
-  /* width: calc(100svw - 10%); */
   left: 50%;
-  width: 80dvw;
+  width: 85svw;
   height: auto;
-  /* z-index:1; */
-
-  background-color: var(--color-primary);
+  background-color: var(--color-btn);
   color: rgb(245, 245, 245);
   font-size: 1.7rem;
-  font-weight: 900;
+  font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid black;
-  border-radius: 3px;
+  border-radius: 8px;
   outline: none;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
-  padding: 0.2rem;
+  box-shadow: inset 0px 2px 8px 3px rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
   opacity: 0;
   transition: opacity 1s linear 0s;
 
-  
   transform: translate(-50%, -50%);
   z-index: 2;
 }
 .btn-active {
+  position:fixed;
+  bottom: 0;
   /* display:block; */
   /* right: 0; */
   /* left: 0; */
@@ -135,25 +141,89 @@ video {
   /* left: 50%;
   transform: translate(-50%, -50%); */
 }
+.rotate-img {
+  display: none;
+  /* margin-top: 2rem; */
+  padding: 0.5rem;
+}
 
-/* .test__form {
-  background-color: red;
-  color: white;
-  font-size: 1.5rem;
-  padding: 2rem;
-  height: 75%;
-} */
-/* @media only screen and (orientation:landscape) {
-  .container{
-    display:none;
+.padxs {
+  padding: 8px 0;
+}
+.container-landscape {
+  display: none;
+}
+.sib-container--large {
+  /* padding: 0 !important; */
+}
+.sib-form-message-panel {
+  margin: 0 0 0.5rem 0 !important;
+}
+.sib-form-message-panel__text {
+  /* margin: 0.5rem 0 0.5rem 0; */
+  padding: 0 !important;
+}
+
+@media screen and (orientation: landscape) {
+  .container {
+    display: none;
   }
-  .container-landscape{
+  .rotate-img {
+    width: 20%;
+    height: auto;
+    display: block;
+    align-self: center;
+  }
+  .container-landscape {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 2rem;
-    height: 75%;
+    height: 100%;
     text-align: center;
-    display:block;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
   }
-} */
+}
+
+@media screen and (max-width: 325px) {
+  .main__button {
+    bottom: 1%;
+    /* right: 0; */
+    width: 90svw;
+    font-size: 1.5rem;
+  }
+  .videoContainer {
+    /* margin-top: -4.5rem; */
+  }
+  .sib-form {
+    line-height: 1;
+    /* text-align: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background-color: transparent;
+    transition: transform 0.6s ease-in-out;
+    transform: translateY(110%);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0%;
+    overflow: hidden;
+    /* display: none; */
+    /* padding: 0 12px !important; */
+  }
+  .padxs {
+    padding: 2px 0;
+  }
+  .sib-form-block {
+    /* font-size:25px; */
+  }
+  .form__element {
+    margin: -35px 0;
+  }
+}
