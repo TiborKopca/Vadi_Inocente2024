@@ -1,14 +1,9 @@
 /* TEAM */
 
-Developer: Juan Pérez
-Contact: juan.perez@example.com
-Twitter: @juanperez
-Location: Madrid, España
-
-Designer: María García
-Contact: maria.garcia@example.com
-Twitter: @mariagarcia
-Location: Barcelona, España
+Developer & Designer: Tibor Kopca & Luis Carlos Giraldo Suarez
+Contact: tiborkopca.development@gmail.com & luisillo19@icloud.com
+Twitter: n/a
+Location: Palma de Mallorca, España
 
 /* THANKS */
 
@@ -18,7 +13,7 @@ Thanks to:
 
 /* SITE */
 
-Last update: 2023-07-20
+Last update: 2024-06-27
 Language: Spanish
 Doctype: HTML5
-Components: React, Redux, Material UI
+Components: HTML, CSS, JavaScript
