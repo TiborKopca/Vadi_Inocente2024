@@ -18,6 +18,8 @@
 :root {
   --color-primary: #ae0021;
   --color-btn: #ff2c2c;
+  --background-body: rgb(12, 12, 12);
+  --color-botones: linear-gradient(45deg, #ff2c2c 20%, #645555 100%); /*En background image*/
 }
 /* ******************************** */
 
@@ -27,7 +29,7 @@ html {
 
 body {
   height: 100svh;
-  background-color: black;
+  background-color: var(--background-body);
   overflow: hidden;
   position: relative;
   /* display: flex;
@@ -43,7 +45,7 @@ body {
   opacity: 1;
   transition: all 1s ease-in-out;
   display: block;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   display: flex;
@@ -59,9 +61,24 @@ video {
       left: 0; */
   width: 100vw;
   height: auto;
-  object-fit: contain;
+  object-fit: fill;
   /* z-index:1; */
 }
+.play__muted{
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  color: white;
+  background-image: linear-gradient(45deg, #ff2c2c 20%, #645555 100%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3.5%;
+  left: 3%;
+}
+
 .sib-form {
   text-align: center;
   background-color: transparent;
@@ -105,26 +122,28 @@ video {
   overflow: hidden;
 } */
 .main__button {
-  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
   bottom: 5%;
   right: 0;
   left: 50%;
-  width: 85svw;
+  width: 95svw;
   height: auto;
-  background-color: var(--color-btn);
-  color: rgb(245, 245, 245);
+  /* background-color: var(--color-btn); */
+  background-image: linear-gradient(45deg, #ff2c2c 20%, #645555 100%);
+  color: white;
   font-size: 1.7rem;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid black;
   border-radius: 8px;
   outline: none;
   box-shadow: inset 0px 2px 8px 3px rgba(0, 0, 0, 0.3);
-  padding: 5px 10px;
+  padding: 12px 20px;
   opacity: 0;
   transition: opacity 1s linear 0s;
 
-  transform: translate(-50%, -50%);
+  transform: translateX(110%);
   z-index: 2;
 }
 .btn-active {
@@ -140,6 +159,7 @@ video {
   opacity: 1;
   /* left: 50%;
   transform: translate(-50%, -50%); */
+  transform: translate(-50%, -20%);
 }
 .rotate-img {
   display: none;

@@ -105,30 +105,31 @@
 </style>
 
 <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-<!--  END - We recommend to place the above code in head tag of your website html -->
+<link rel="stylesheet" href="css/formstyles.css" />
 
   </head>
   <body>
     <div id="container" class="container">
-  
+      <button class="play__muted" id="playMuted"><img src="/svg/icono_speaker_on.svg" id="playSound" class="play__sound"></button>
       <!-- <div class="videoContainer" id="videoContainer"> -->
         <!-- <video src="./video/vadi_inocente.webm" muted autoplay controls id="video">
         </video> -->
 
         <video muted autoplay loop playsinline
-          preload="auto" controls id="videoContainer">
+        preload="auto" id="videoContainer">
+        <source src="./video/vadi_inocente.avif"  type="video/avif"></source>
         <source src="./video/vadi_inocente.webm"  type="video/webm"></source>
         <source src="./video/vadi_inocente_reduced.mp4" type="video/mp4"></source>
         Tu navegador no soporta el formato de video
       </video> 
-
-        <button id="subscribe" class="main__button">CONOCE LA VERDAD</button>
+      <a id="subscribe" class="main__button" target="_blank" href="/form.html" >CONOCE LA VERDAD</a>
+        <!-- <button id="subscribe" class="main__button">CONOCE LA VERDAD</button> -->
       <!-- </div> -->
 
           <!-- Begin Brevo Form -->
     
     <!-- START - We recommend to place the below code where you want the form in your website html  -->
-    <div class="sib-form" id="form" >
+    <!-- <div class="sib-form" id="form" >
          
       <div id="sib-form-container" class="sib-form-container">
         <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
@@ -157,16 +158,6 @@
         <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(181,15,22,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#f6f6f6; border-style:solid; direction:ltr">
           <form class='form__element' id="sib-form" method="POST" action="https://e2ce1fdd.sibforms.com/serve/MUIFAI-oVhxGrxWehzcPZdGHN7E3cQnN1T_zKuAtUXeEHCavaFi94D0eisG5_oRvAQRKb5p5_U2drtyWpVk9Zn867xS7oj9jPQ1foXa6jWA8L1MUjKjKmg7BNn3Gaxd8ytunFAtcSm7jr--HMBf57Ab8ojZGZnAiuZN-HQuwW5TS18fHOQwNsQoUGSfxR0y48CKBpM1CwXu910Qq" data-type="subscription">
             
-            <!-- <div class="contenedor__de-los-dos" style="display: flex; justify-content: space-between; flex-direction: row;">
-            
-            </div>
-            <img src="./svg/x-fill.svg" alt="close button" id="x-button" class="sib-form-message-panel__close-button">
-            
-            <div class='padxs' >
-              <div class="sib-form-block form__header" style="font-size:32px; text-align:left; font-weight:700; width: 70%;font-family:Helvetica, sans-serif; color:#f6f6f6; background-color:transparent; text-align:left">
-                <p>Conoce la verdad</p>
-              </div>
-            </div> -->
 
             <div class='padxs' >
               <div class="contenedor__de-los-dos" style="display: flex; justify-content: space-between; flex-direction: row;">
@@ -258,13 +249,13 @@
           </form>
         </div>
       </div>
-        </div>
+        </div> -->
         <!-- END - We recommend to place the above code where you want the form in your website html  -->
       </div>
       <div class="container-landscape">
-        <img lazyload class='rotate-img' src="./img/icons/rotationPhone.webp" alt="" >
+        <img lazyload class='rotate-img' src="./img/icons/rotationPhone.webp" alt="imagen rotar smartphone" >
         
-      Para visualizar correctamenter el contenido ponlo en modo vertical.
+      Para visualizar correctamente el contenido ponlo en modo vertical.
     </div>
 
 
@@ -292,7 +283,7 @@
   var AUTOHIDE = Boolean(0);
 </script>
 
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<!-- <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script> -->
 
 <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
 <!-- End Brevo Form -->
