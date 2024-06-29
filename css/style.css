@@ -141,9 +141,11 @@ video {
   box-shadow: inset 0px 2px 8px 3px rgba(0, 0, 0, 0.3);
   padding: 12px 20px;
   opacity: 0;
-  transition: opacity 1s linear 0s;
+  /* transition: opacity 1s linear 0s; */
+  transition: all 1s linear 0s;
 
-  transform: translateX(110%);
+  /* transform: translateX(110%); */
+  transform: translate(-50%, -1000%);
   z-index: 2;
 }
 .btn-active {
@@ -160,6 +162,7 @@ video {
   /* left: 50%;
   transform: translate(-50%, -50%); */
   transform: translate(-50%, -20%);
+  /* transform: translateX(0%); */
 }
 .rotate-img {
   display: none;
