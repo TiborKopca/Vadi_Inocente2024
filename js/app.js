@@ -58,10 +58,10 @@ const icon_sound = document.getElementById('playSound');
 muteButton.addEventListener('click', function() {
     if (video.muted) {
         video.muted = false;
-        icon_sound.src = '../svg/icono_speaker.svg';
+        icon_sound.src = '/svg/icono_speaker.svg';
     } else {
         video.muted = true;
-        icon_sound.src = '../svg/icono_speaker_on.svg';
+        icon_sound.src = '/svg/icono_speaker_on.svg';
     }
 });
 
